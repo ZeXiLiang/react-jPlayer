@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"> 
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Playlist</title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+
+  <link rel="stylesheet" href="sleek.css">
+  <link rel="stylesheet" href="../node_modules/react-jplaylist/dist/css/controls/iconControls.min.css">
+  <link rel="stylesheet" href="../node_modules/antd/dist/antd.css">
+ 
+ <style>
+     .jp-sleek .jp-gui {
+         position: relative;
+         
+        top:100px;
+         margin: 0 auto;
+         height: 60px;
+         width: 400px;
+     }
+     .jp-volume-slider{
+      display: none;
+     }
+     .jp-sleek .jp-gui .jp-controls {
+         display: block;
+         
+     }
+.jp-icon-controls .jp-download, .jp-icon-controls .jp-full-screen, .jp-icon-controls .jp-mute, .jp-icon-controls .jp-play, .jp-icon-controls .jp-repeat {
+    min-width: 42px;
+    color: #000;
+    padding: 0;
+}
+     .jp-sleek .jp-gui .jp-controls .jp-progress {
+         position: relative;
+     
+         background-color: #a1c1f4;
+width: 400px;
+min-width: 160px;
+max-width: 400px;
+font-size: 20px;
+
+     }
+     .jp-title-container {
+         display: block;
+         position: relative;
+     }
+     .jp-playlist {
+         position: absolute;
+         left: -300px;
+         
+     }
+    </style>
+
+ 
+</head>
+
+<body>
+  <div id="app">
+
+      
+      <div data-reactroot=""><div id="AudioPlaylist" class="jp-jplayer jp-sleek jp-state-audio jp-state-idle jp-state-volume-high jp-state-looped-playlist" draggable="false"><!-- react-empty: 3 --><!-- react-empty: 4 --><!-- react-empty: 5 --><!-- react-empty: 6 --><audio class="jp-media" preload="metadata" src="http://pc64-19.jyw8.com:8421/up01-1134b3a605/DJ%E4%BD%99%E6%84%8F-%E6%97%A0%E6%8D%9F%E5%B8%9D%E5%9B%BD%E3%80%90%E8%B6%85%E5%BC%BA%E6%99%A6%E4%B8%B2%E9%9B%86%E5%90%88%E5%85%A8%E5%9B%BD%E6%9C%80%E4%BC%98%E7%A7%80%E8%BF%B7%E5%B9%BB%E5%97%A8%E6%9B%B23D%E8%BD%A6%E9%9C%87%E9%A9%BE%E9%A9%B6%E7%A9%BA%E9%97%B4%E3%80%91%E6%95%B0%E7%A0%81%E9%BB%91%E8%83%B6.mp3"></audio><div class="jp-gui" style="opacity: 1;"><div class="jp-controls jp-icon-controls"><button class="jp-previous"><i aria-label="icon: backward" class="anticon anticon-backward"><svg viewBox="0 0 1024 1024" class="" data-icon="backward" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M485.6 249.9L198.2 498c-8.3 7.1-8.3 20.8 0 27.9l287.4 248.2c10.7 9.2 26.4.9 26.4-14V263.8c0-14.8-15.7-23.2-26.4-13.9zm320 0L518.2 498a18.6 18.6 0 0 0-6.2 14c0 5.2 2.1 10.4 6.2 14l287.4 248.2c10.7 9.2 26.4.9 26.4-14V263.8c0-14.8-15.7-23.2-26.4-13.9z"></path></svg></i></button><button class="jp-play"><i class="fa"></i></button><button class="jp-next"><i aria-label="icon: forward" class="anticon anticon-forward"><svg viewBox="0 0 1024 1024" class="" data-icon="forward" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M825.8 498L538.4 249.9c-10.7-9.2-26.4-.9-26.4 14v496.3c0 14.9 15.7 23.2 26.4 14L825.8 526c8.3-7.2 8.3-20.8 0-28zm-320 0L218.4 249.9c-10.7-9.2-26.4-.9-26.4 14v496.3c0 14.9 15.7 23.2 26.4 14L505.8 526c4.1-3.6 6.2-8.8 6.2-14 0-5.2-2.1-10.4-6.2-14z"></path></svg></i></button><div class="jp-volume-slider"><div class="jp-volume-bar-container"><div class="jp-volume-bar"><div class="jp-volume-bar-value" style="height: 80%;"></div></div></div></div><button class="jp-repeat"><i class="fa"></i><i class="fa fa-repeat"></i></button><button class="jp-shuffle"><i class="fa fa-random"></i></button><div class="jp-playlist-container"><ul class="jp-playlist jp-hidden"><li class="jp-current"><button class="jp-remove">×</button><button class="jp-media-link"><div class="jp-title">Dj余意 - 超强晦串集合全国最优秀迷幻嗨曲3D车震驾驶空</div></button></li><li class=""><button class="jp-remove">×</button><button class="jp-media-link"><div class="jp-title">DjLicky路起 - 舒服中英文proghouse音乐系列轻松节奏</div></button></li><li class=""><button class="jp-remove">×</button><button class="jp-media-link"><div class="jp-title">Dj杨小林 - 界沟黎明脚步徒步专用全新音乐</div></button></li></ul><button class="jp-toggle-playlist"><i aria-label="icon: menu-fold" class="anticon anticon-menu-fold"><svg viewBox="64 64 896 896" class="" data-icon="menu-fold" width="1em" height="1em" fill="currentColor" aria-hidden="true" focusable="false"><path d="M408 442h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8zm-8 204c0 4.4 3.6 8 8 8h480c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8H408c-4.4 0-8 3.6-8 8v56zm504-486H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zm0 632H120c-4.4 0-8 3.6-8 8v56c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-56c0-4.4-3.6-8-8-8zM115.4 518.9L271.7 642c5.8 4.6 14.4.5 14.4-6.9V388.9c0-7.4-8.5-11.5-14.4-6.9L115.4 505.1a8.74 8.74 0 0 0 0 13.8z"></path></svg></i></button></div><div class="jp-progress"><div class="jp-seek-bar" style="width: 100%;"><canvas class="jp-buffer-bar"></canvas><div class="jp-play-bar" style="width: 0%;"></div><div class="jp-current-time">0:00</div><div class="jp-duration">61:59</div></div></div><div class="jp-volume-container"><button class="jp-mute"><i class="fa"></i></button></div><button class="jp-full-screen"><i class="fa fa-expand"></i></button><a class="jp-download" download="" target="_blank" rel="noopener noreferrer" href="http://pc64-19.jyw8.com:8421/up01-1134b3a605/DJ%E4%BD%99%E6%84%8F-%E6%97%A0%E6%8D%9F%E5%B8%9D%E5%9B%BD%E3%80%90%E8%B6%85%E5%BC%BA%E6%99%A6%E4%B8%B2%E9%9B%86%E5%90%88%E5%85%A8%E5%9B%BD%E6%9C%80%E4%BC%98%E7%A7%80%E8%BF%B7%E5%B9%BB%E5%97%A8%E6%9B%B23D%E8%BD%A6%E9%9C%87%E9%A9%BE%E9%A9%B6%E7%A9%BA%E9%97%B4%E3%80%91%E6%95%B0%E7%A0%81%E9%BB%91%E8%83%B6.mp3"><i class="fa fa-download"></i></a><div class="jp-title-container"><img class="jp-poster" alt="" src="https://zexiliang.github.io/0428/touxiang.jpg"><div class="jp-title">Dj余意 - 超强晦串集合全国最优秀迷幻嗨曲3D车震驾驶空</div></div></div><!-- react-empty: 63 --></div></div></div>
+      
+  </div>
+
+   
+    
+
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prop-types/15.5.10/prop-types.min.js"></script>
+  <script src="https://unpkg.com/react-motion/build/react-motion.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/recompose/0.25.0/Recompose.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/3.7.2/redux.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/react-redux/5.0.6/react-redux.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/screenfull.js/3.3.1/screenfull.min.js"></script>
+  <script src="https://zexiliang.github.io/0428/react-jPlayer-utils.min.js"></script>
+  <script src="https://zexiliang.github.io/0428/react-jPlayer.min.js"></script>
+  <script src="https://zexiliang.github.io/0428/react-jPlaylist.min.js"></script>
+  <script src="https://zexiliang.github.io/0428/umdPlaylist.bundle.js"></script>
+</body>
+
+</html>
